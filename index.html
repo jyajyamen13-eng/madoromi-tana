@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>催眠堂まどろみ｜作品棚</title>
+<style>
+:root {
+--bg: #12101a;
+--bg-soft: #1a1726;
+--card: #1e1a2e;
+--line: #35304a;
+--text: #e8e4f2;
+--text-dim: #a79fc0;
+--accent: #b7a6dd;
+--accent-dim: #7d6fa3;
+--warn-bg: #2a1620;
+--warn-line: #6e3550;
+--warn-text: #f0b9cd;
+}
+* { box-sizing: border-box; margin: 0; padding: 0;}
+html { -webkit-text-size-adjust: 100%;}
+body {
+background: var(--bg);
+color: var(--text);
+font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+font-size: 15px;
+line-height: 1.8;
+padding: 0 16px 48px;
+}
+.wrap { max-width: 640px; margin: 0 auto;}
+
+header {
+text-align: center;
+padding: 44px 8px 28px;
+border-bottom: 1px solid var(--line);
+}
+header.kicker {
+font-size: 11px;
+letter-spacing: 0.35em;
+color: var(--accent-dim);
+margin-bottom: 10px;
+}
+header h1 {
+font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho", serif;
+font-size: 30px;
+font-weight: 600;
+letter-spacing: 0.12em;
+color: var(--text);
+}
+header.intro {
+margin-top: 14px;
+font-size: 14px;
+color: var(--text-dim);
+}
+
+.notice-age {
+margin-top: 24px;
+background: var(--warn-bg);
+border: 1px solid var(--warn-line);
+border-radius: 8px;
+padding: 14px 16px;
+text-align: center;
+}
+.notice-age strong {
+display: block;
+font-size: 16px;
+color: var(--warn-text);
+letter-spacing: 0.05em;
+}
+.notice-age span {
+font-size: 12.5px;
+color: var(--warn-text);
+opacity: 0.85;
+}
+
+.notice-pr {
+margin-top: 14px;
+background: var(--bg-soft);
+border: 1px solid var(--line);
+border-radius: 8px;
+padding: 12px 16px;
+font-size: 12.5px;
+color: var(--text-dim);
+}
+.notice-pr strong { color: var(--accent); font-weight: 600;}
+
+section.shelf { margin-top: 36px;}
+section.shelf > h2 {
+font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho", serif;
+font-size: 19px;
+font-weight: 600;
+letter-spacing: 0.15em;
+text-align: center;
+color: var(--text);
+}
+section.shelf >.shelf-note {
+text-align: center;
+font-size: 12.5px;
+color: var(--text-dim);
+margin-top: 6px;
+}
+
+.work {
+background: var(--card);
+border: 1px solid var(--line);
+border-radius: 10px;
+padding: 20px 18px;
+margin-top: 18px;
+}
+.work.no {
+font-size: 11px;
+letter-spacing: 0.3em;
+color: var(--accent-dim);
+}
+.work h3 {
+font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho", serif;
+font-size: 17.5px;
+font-weight: 600;
+line-height: 1.6;
+margin-top: 6px;
+}
+.work dl {
+margin-top: 12px;
+font-size: 13.5px;
+}
+.work dl div {
+display: flex;
+gap: 12px;
+padding: 3px 0;
+}
+.work dt {
+flex: 0 0 4.5em;
+color: var(--text-dim);
+}
+.work dd { color: var(--text);}
+.work.word {
+margin-top: 12px;
+padding-top: 12px;
+border-top: 1px dashed var(--line);
+font-size: 14px;
+color: var(--text);
+}
+.work.word.label {
+display: block;
+font-size: 11px;
+letter-spacing: 0.25em;
+color: var(--accent-dim);
+margin-bottom: 4px;
+}
+.work.link-area { margin-top: 16px; text-align: center;}
+.work.btn-pending {
+display: inline-block;
+width: 100%;
+padding: 11px 0;
+border: 1px solid var(--accent-dim);
+border-radius: 8px;
+color: var(--accent);
+font-size: 14px;
+letter-spacing: 0.08em;
+background: transparent;
+opacity: 0.75;
+}
+
+footer {
+margin-top: 44px;
+padding-top: 24px;
+border-top: 1px solid var(--line);
+text-align: center;
+font-size: 13px;
+color: var(--text-dim);
+}
+footer a { color: var(--accent); text-decoration: none;}
+footer a:hover { text-decoration: underline;}
+footer.updated { margin-top: 10px; font-size: 12px;}
+footer.fineprint { margin-top: 14px; font-size: 11.5px; line-height: 1.7;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<p class="kicker">催 眠 の 専 門 店</p>
+<h1>催眠堂まどろみ</h1>
+<p class="intro">催眠の専門店。FANZAの催眠音声・同人作品のレビューと新作情報を、まどろみながらお届けします。</p>
+</header>
+
+<div class="notice-age">
+<strong>18歳未満の方は閲覧できません</strong>
+<span>このページには成人向け作品の紹介を含みます。</span>
+</div>
+
+<div class="notice-pr">
+<strong></strong>このページにはアフィリエイトリンクが含まれます。リンク先で作品をご購入いただくと、店に紹介料が入ることがあります。
+</div>
+
+<section class="shelf">
+<h2>作 品 棚</h2>
+<p class="shelf-note">店主が棚に置いた催眠音声です。</p>
+
+<article class="work">
+<p class="no">棚の一本目</p>
+<h3>催●スクール〜催●にかかる為の催●音声〜</h3>
+<dl>
+<div><dt>サークル</dt><dd>エロトランス</dd></div>
+<div><dt>形式</dt><dd>同人音声（催眠誘導）</dd></div>
+<div><dt>価格</dt><dd>¥1,210</dd></div>
+<div><dt>評価</dt><dd>FANZA ★5.0（3件）</dd></div>
+<div><dt>発売</dt><dd>2018年9月15日</dd></div>
+</dl>
+<p class="word">
+<span class="label">店主の一言</span>
+かかりたいのにかかれない方へ、誘導の基本から入る一本です。エロ要素のない、純粋な誘導作品です。タグは「催眠」「イメージ誘導」「覚醒」。
+</p>
+<div class="link-area">
+<!-- AFF_LINK_1 -->
+<span class="btn-pending">FANZAで見る（準備中）</span>
+</div>
+</article>
+
+<article class="work">
+<p class="no">棚の二本目</p>
+<h3>ナマイキなバイト後輩を言いなりオナホにしたら…</h3>
+<dl>
+<div><dt>サークル</dt><dd>うこんちゃん☆かんぱにぃ</dd></div>
+<div><dt>形式</dt><dd>同人音声（催眠×耳舐め）</dd></div>
+<div><dt>価格</dt><dd>¥1,320</dd></div>
+<div><dt>評価</dt><dd>FANZA ★5.0（3件）</dd></div>
+<div><dt>発売</dt><dd>2025年3月15日</dd></div>
+</dl>
+<p class="word">
+<span class="label">店主の一言</span>
+「催眠×耳舐め」の組み合わせを題材にした一本です。CVは都みみちさん。
+</p>
+<div class="link-area">
+<!-- AFF_LINK_2 -->
+<span class="btn-pending">FANZAで見る（準備中）</span>
+</div>
+</article>
+
+<article class="work">
+<p class="no">棚の三本目</p>
+<h3>あまあまマルチ催●</h3>
+<dl>
+<div><dt>サークル</dt><dd>空心菜館</dd></div>
+<div><dt>形式</dt><dd>同人音声（全方向バイノーラル）</dd></div>
+<div><dt>価格</dt><dd>¥1,760</dd></div>
+<div><dt>評価</dt><dd>FANZA ★5.0（1件）</dd></div>
+<div><dt>発売</dt><dd>2025年8月20日</dd></div>
+</dl>
+<p class="word">
+<span class="label">店主の一言</span>
+右耳・左耳・背後から声が重なる、全方向バイノーラル仕様の一本です。試聴も用意されています。
+</p>
+<div class="link-area">
+<!-- AFF_LINK_3 -->
+<span class="btn-pending">FANZAで見る（準備中）</span>
+</div>
+</article>
+
+</section>
+
+<footer>
+<p>店の最新情報は X でお届けしています。<br>
+<a href="https://x.com/saimin_madoromi" target="_blank" rel="noopener">催眠堂まどろみ（@saimin_madoromi）</a></p>
+<p class="updated">更新日：2026年11月18日</p>
+<p class="fineprint">価格と評価は2026年11月時点の情報です。最新の価格は販売ページでご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
